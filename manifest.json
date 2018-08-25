@@ -1,0 +1,15 @@
+{
+  "name": "AWS Price",
+  "version": "0.1",
+  "description": "Show AWS prices on the console",
+  "manifest_version": 2,
+
+  "content_scripts": [
+    {
+      "matches": ["https://ap-northeast-1.console.aws.amazon.com/*"],
+      "js": ["lib/aws_price.js"]
+    }
+  ],
+  "homepage_url": "https://github.com/shirakia/aws-price",
+  "offline_enabled": true
+}

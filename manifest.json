@@ -6,10 +6,11 @@
 
   "content_scripts": [
     {
-      "matches": ["https://ap-northeast-1.console.aws.amazon.com/*"],
+      "matches": ["https://ap-northeast-1.console.aws.amazon.com/*",
+                  "https://a0.awsstatic.com/*"],
       "js": [
-        "lib/aws_price.js",
-        "lib/jquery-3.3.1.min.js"
+        "lib/jquery-3.3.1.min.js",
+        "lib/aws_price.js"
       ]
     }
   ],

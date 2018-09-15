@@ -6,13 +6,18 @@
 
   "content_scripts": [
     {
-      "matches": ["https://ap-northeast-1.console.aws.amazon.com/*",
+      "matches": ["https://*.console.aws.amazon.com/*",
                   "https://a0.awsstatic.com/*"],
       "js": [
         "lib/jquery-3.3.1.min.js",
+        "lib/js.cookie-2.2.0.min.js",
         "lib/aws_price.js"
       ]
     }
+  ],
+  "permissions": [
+    "cookies",
+    "https://*.console.aws.amazon.com/*"
   ],
   "homepage_url": "https://github.com/shirakia/aws-price",
   "offline_enabled": true
